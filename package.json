@@ -1,0 +1,27 @@
+{
+  "name": "turnstyle",
+  "displayName": "Turnstyle",
+  "description": "Turnstile theme based on never enough colors",
+  "version": "1.0.0",
+  "publisher": "oxechicao",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oxechicao/turnstyle"
+  },
+  "icon": "turnstile-never-enough.jpg",
+  "engines": {
+    "vscode": "^1.104.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Turnstyle",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Turnstyle-color-theme.json"
+      }
+    ]
+  }
+}
