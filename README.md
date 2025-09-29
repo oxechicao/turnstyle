@@ -1,6 +1,6 @@
 # turnstyle README
 
-![never-enough](https://raw.githubusercontent.com/oxechicao/nature-high-theme/refs/heads/main/turnstile-never-enough.jpg)
+![never-enough](https://raw.githubusercontent.com/oxechicao/turnstyle/refs/heads/main/turnstile-never-enough.jpg)
 
 
 | Colors     | Hex     | HSLA                     |
