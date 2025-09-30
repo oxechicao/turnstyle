@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Version bump and package generation script
-# Usage: ./generate-package.sh [fix|patch|version]
+# Usage: ./generate-package.sh [major|minor|patch]
 
 set -e
 
@@ -84,15 +84,15 @@ print_info "Current version components: Major=$MAJOR, Minor=$MINOR, Patch=$PATCH
 
 # Calculate new version based on bump type
 case $BUMP_TYPE in
-    "fix")
+    "patch")
         NEW_PATCH=$((PATCH + 1))
         NEW_VERSION="$MAJOR.$MINOR.$NEW_PATCH"
         ;;
-    "patch")
+    "minor")
         NEW_MINOR=$((MINOR + 1))
         NEW_VERSION="$MAJOR.$NEW_MINOR.0"
         ;;
-    "version")
+    "major")
         NEW_MAJOR=$((MAJOR + 1))
         NEW_VERSION="$NEW_MAJOR.0.0"
         ;;
@@ -145,7 +145,7 @@ print_info "Creating tag v$NEW_VERSION..."
 git tag "v$NEW_VERSION"
 
 print_info "Pushing tag to origin..."
-git push origin "v$NEW_VERSION"
+git push origin --tags
 
 print_info "Creating package with vsce..."
 vsce package

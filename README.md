@@ -1,8 +1,17 @@
+> The theme is still evolving...
+
 # turnstyle README
 
 ![never-enough](https://raw.githubusercontent.com/oxechicao/turnstyle/refs/heads/main/turnstile-never-enough.jpg)
 
+## Main Languages supported
 
+* .tsx, ts, js, jsx
+* go
+* md
+
+## Colors
+#ff1212cc
 | Colors     | Hex     | HSLA                     |
 | ---------- | ------- | ------------------------ |
 | Dark Green | #123734 | hsla(171, 51%, 15%, 1)   |
