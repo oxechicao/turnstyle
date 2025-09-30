@@ -134,10 +134,11 @@
 				"meta.function-call",
 				"variable.function",
 				"support.function",
-				"keyword.other.special-method"
+				"keyword.other.special-method",
+        "entity.name.function.ts"
 			],
 			"settings": {
-				"foreground": "#c7cbd6"
+				"foreground": "#b48a49"
 			}
 		},
 		{
@@ -423,7 +424,7 @@
 				"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
 			],
 			"settings": {
-				"foreground": "#F78C6C"
+				"foreground": "#c7cbd6"
 			}
 		},
 		{
