@@ -134,12 +134,27 @@
 			"scope": [
 				"entity.name.tag",
 				"meta.tag.sgml",
-				"markup.deleted.git_gutter"
+				"markup.deleted.git_gutter",
+        "entity.name.tag.ts.tsx",
+        "entity.name.tag.ts",
+        "entity.name.tag.js",
+        "entity.name.tag.js.jsx",
 			],
 			"settings": {
 				"foreground": "#4391d4"
 			}
 		},
+    {
+      "name": "Tag jsx tsx",
+      "scope": [
+        "support.class.component.js.jsx",
+        "support.class.component.tsx"
+      ],
+      "settings": {
+				"foreground": "#4391d4",
+        "fontStyle": "italic"
+			}
+    },
 		{
 			"name": "Block Level Variables",
 			"scope": [

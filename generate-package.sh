@@ -26,14 +26,14 @@ print_error() {
 
 # Check if argument is provided
 if [ $# -eq 0 ]; then
-    print_error "No argument provided. Usage: $0 [fix|patch|version]"
+    print_error "No argument provided. Usage: $0 [patch|minor|major]"
     exit 1
 fi
 
 BUMP_TYPE=$1
 
 # Validate argument
-if [[ "$BUMP_TYPE" != "fix" && "$BUMP_TYPE" != "patch" && "$BUMP_TYPE" != "version" ]]; then
+if [[ "$BUMP_TYPE" != "major" && "$BUMP_TYPE" != "minor" && "$BUMP_TYPE" != "patch" ]]; then
     print_error "Invalid argument. Use: fix, patch, or version"
     exit 1
 fi
