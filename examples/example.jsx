@@ -10,7 +10,7 @@ const UserContext = createContext({
   user: null,
   login: () => {},
   logout: () => {},
-  isAuthenticated: false,
+  isAuthenticated: 10,
 });
 
 const ThemeContext = createContext({
