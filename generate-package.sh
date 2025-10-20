@@ -34,7 +34,7 @@ BUMP_TYPE=$1
 
 # Validate argument
 if [[ "$BUMP_TYPE" != "major" && "$BUMP_TYPE" != "minor" && "$BUMP_TYPE" != "patch" ]]; then
-    print_error "Invalid argument. Use: fix, patch, or version"
+    print_error "Invalid argument. Use: major, minor, or patch"
     exit 1
 fi
 

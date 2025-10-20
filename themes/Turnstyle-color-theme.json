@@ -653,6 +653,14 @@
 				"foreground": "#b48a49",
 				"fontStyle": "bold"
 			}
-		}
+		},
+    {
+      "name": "Import strings",
+      "scope": ["entity.name.import.go"],
+      "settings": {
+        "foreground": "#be6d8d",
+        "fontStyle": "italic bold"
+      }
+    }
 	]
 }
