@@ -32,14 +32,14 @@
 
     "editor.lineHighlightBorder": "#232e4b",
 
-    "editor.selectionForeground": "#c7cbd6",
-    "editor.selectionBackground": "#123734",
-    "editor.selectionHighlightBackground": "#123734",
-    "editor.selectionHighlightBorder": "#123734",
-    "editor.wordHighlightBackground": "#123734",
-    "editor.wordHighlightBorder": "#123734",
-    "editor.wordHighlightStrongBackground": "#123734",
-    "editor.wordHighlightStrongBorder": "#123734",
+    "editor.selectionForeground": "#a7e5f0",
+    "editor.selectionBackground": "#0b4bbd",
+    "editor.selectionHighlightBackground": "#0b4bbd",
+    "editor.selectionHighlightBorder": "#a7e5f0",
+    "editor.wordHighlightBackground": "#0b4bbd",
+    "editor.wordHighlightBorder": "#a7e5f0",
+    "editor.wordHighlightStrongBackground": "#0b4bbd",
+    "editor.wordHighlightStrongBorder": "#a7e5f0",
 
 		"sideBarTitle.foreground": "#c7cbd6",
 		"editorBracketHighlight.foreground1": "#5c93b8",
@@ -70,7 +70,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#97564b"
+				"foreground": "#8a5737"
 			}
 		},
 		{
@@ -99,10 +99,13 @@
         "keyword.operator.pattern.case.shell",
         "keyword.operator.pattern.case.shell meta.case.entry.pattern.shell meta.case.shell source.shell",
         "storage",
+        "keyword.other.package",
+        "keyword.other.import",
+        "keyword.other.package.java",
+        "keyword.other.import.java"
       ],
       "settings": {
-        "foreground": "#4391d4",
-        "fontStyle": "bold"
+        "foreground": "#4391d4"
       }
     },
 		{
@@ -127,7 +130,13 @@
 				"punctuation.definition.tag.html",
 				"punctuation.definition.tag.begin.html",
 				"punctuation.definition.tag.end.html",
-				"punctuation.section.embedded"
+				"punctuation.section.embedded",
+        "keyword.operator.comparison.js.jsx",
+        "keyword.operator.logical.js.jsx",
+        "meta.block.js.jsx",
+        "meta.arrow.js.jsx",
+        "meta.block.js.jsx",
+        "meta.arrow.js.jsx",
 			],
 			 "settings": {
 				"foreground": "#5c93b8",
@@ -277,10 +286,14 @@
 		{
 			"name": "Entity Types",
 			"scope": [
-				"support.type"
+				"support.type",
+        "storage.type.primitive.java",
+        "storage.type.java",
+        "storage.type.js.jsx"
 			],
 			"settings": {
-				"foreground": "#B2CCD6"
+				"foreground": "#5c93b8",
+        "fontStyle": "italic"
 			}
 		},
 		{
@@ -397,7 +410,7 @@
 				"constant.character.escape"
 			],
 			"settings": {
-				"foreground": "#be6d8d"
+				"foreground": "#f33c86"
 			}
 		},
 		{
@@ -655,10 +668,23 @@
 			}
 		},
     {
-      "name": "Import strings",
-      "scope": ["entity.name.import.go"],
+      "name": "Package strings names",
+      "scope": [
+        "entity.name.type.package",
+        "entity.name.type.package.go",
+        "storage.modifier.package",
+        "storage.modifier.package.java"
+      ],
       "settings": {
-        "foreground": "#be6d8d",
+        "foreground": "#b48a49",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Import strings",
+      "scope": ["entity.name.import.go", "storage.modifier.import.java"],
+      "settings": {
+        "foreground": "#c7cbd6",
         "fontStyle": "italic bold"
       }
     }

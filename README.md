@@ -9,8 +9,32 @@
 * .tsx, ts, js, jsx
 * go
 * md
+* java
 
 ## Colors
+
+### Color usage
+
+| Usages                      | Hex color | Modifications      |
+| --------------------------- | --------- | ------------------ |
+| background                  | #0e283f   |                    |
+| foreground                  | #c7cbd6   |                    |
+| pontuations/brackets        | #5c93b8   | bold               |
+| keyword                     | #4391d4   | bold               |
+| keyword types               | #5c93b8   | italic             |
+| string                      | #be6d8d   |                    |
+| string escape               | #f33c86   |                    |
+| number                      | #be6d8d   | bold               |
+| comments                    | #8a5737   | italic             |
+| function name               | #b48a49   |                    |
+| urls                        | #b48a49   | italic underscored |
+| urls deprecated/inactivated | #b48a49   | italic strikeout   |
+| selection background        | #0b4bbd   |                    |
+| selection foreground        | #a7e5f0   |                    |
+
+### Color lists
+
+#### Coding colors
 
 | Colors     | Hex     | HSLA                     |
 | ---------- | ------- | ------------------------ |
@@ -22,16 +46,7 @@
 | Yellow     | #b48a49 | hsla(36, 57%, 59%, 1.00) |
 | Dark blue  | #0e283f | hsla(211, 66%, 15%, 1)   |
 
-| Colors     | Hex     | HSLA                    |
-| ---------- | ------- | ----------------------- |
-| Dark Green | #00513f | hsla(167, 100%, 16%, 1) |
-| Light blue | #5c93b8 | hsla(206, 35%, 54%, 1)  |
-| Light      | #d2d3ce | hsla(75, 7%, 82%, 1)    |
-| Pink       | #ad364a | hsla(349, 51%, 45%, 1)  |
-| Orange     | #8a5737 | hsla(23, 42%, 38%, 1)   |
-| Yellow     | #bf9346 | hsla(37, 46%, 52%, 1)   |
-| Dark blue  | #232e4b | hsla(223, 34%, 22%, 1)  |
-
+#### Acent colors
 
 | Colors     | Hex     | HSLA                   |
 | ---------- | ------- | ---------------------- |
@@ -42,3 +57,13 @@
 | Orange     | #ec810d | hsla(32, 87%, 49%, 1)  |
 | Yellow     | #e8d107 | hsla(54, 92%, 47%, 1)  |
 | Dark blue  | #0b4bbd | hsla(221, 85%, 39%, 1) |
+
+| Colors     | Hex     | HSLA                    |
+| ---------- | ------- | ----------------------- |
+| Dark Green | #00513f | hsla(167, 100%, 16%, 1) |
+| Light blue | #5c93b8 | hsla(206, 35%, 54%, 1)  |
+| Light      | #d2d3ce | hsla(75, 7%, 82%, 1)    |
+| Pink       | #ad364a | hsla(349, 51%, 45%, 1)  |
+| Orange     | #8a5737 | hsla(23, 42%, 38%, 1)   |
+| Yellow     | #bf9346 | hsla(37, 46%, 52%, 1)   |
+| Dark blue  | #232e4b | hsla(223, 34%, 22%, 1)  |
