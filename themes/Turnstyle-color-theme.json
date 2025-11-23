@@ -33,12 +33,12 @@
     "editor.lineHighlightBorder": "#232e4b",
 
     "editor.selectionForeground": "#a7e5f0",
-    "editor.selectionBackground": "#0b4bbd",
-    "editor.selectionHighlightBackground": "#0b4bbd",
+    "editor.selectionBackground": "#00513f",
+    "editor.selectionHighlightBackground": "#00513f",
     "editor.selectionHighlightBorder": "#a7e5f0",
-    "editor.wordHighlightBackground": "#0b4bbd",
+    "editor.wordHighlightBackground": "#00513f",
     "editor.wordHighlightBorder": "#a7e5f0",
-    "editor.wordHighlightStrongBackground": "#0b4bbd",
+    "editor.wordHighlightStrongBackground": "#00513f",
     "editor.wordHighlightStrongBorder": "#a7e5f0",
 
 		"sideBarTitle.foreground": "#c7cbd6",
@@ -262,11 +262,19 @@
 				"support.type.sys-types"
 			],
 			"settings": {
-				"foreground": "#c7cbd6",
+				"foreground": "#B5A73C",
         "fontStyle": "bold"
 			}
 		},
-
+    {
+      "name": "Inherited class, interfaces, extends",
+      "scope": ["entity.other.inherited-class.java"],
+      "settings": {
+        "foreground": "#B5A73C",
+        "fontStyle": "italic",
+        "activeBorder": "#f00"
+      }
+    },
 		{
 			"name": "Function, Special Method",
 			"scope": [
@@ -487,12 +495,20 @@
 			"scope": [
 				"markdown.heading",
 				"markup.heading | markup.heading entity.name",
-				"markup.heading.markdown punctuation.definition.heading.markdown"
+				"markup.heading.markdown .markdown"
 			],
 			"settings": {
-				"foreground": "#b48a49"
+				"foreground": "#4391d4"
 			}
 		},
+    {
+      "name": "Markdown punctuation definitions",
+      "scope": ["punctuation.definition.heading", "punctuation.definition.heading.markdown", "punctuation.definition.list.begin.markdown", "punctuation.definition.table.markdown"],
+      "settings": {
+        "foreground": "#5c93b8",
+        "fontStyle": "bold"
+      }
+    },
 		{
 			"name": "Markup - Italic",
 			"scope": [
@@ -558,12 +574,15 @@
 			}
 		},
 		{
-			"name": "Markdown - Link",
+			"name": "Markdown - Link, Other links",
 			"scope": [
-				"string.other.link.title.markdown"
+        "string.other.link.description.markdown",
+				"string.other.link.title.markdown",
+        "meta.link.inline.markdown",
+        "meta.image.inline.markdown"
 			],
 			"settings": {
-				"foreground": "#c7cbd6"
+				"foreground": "#B5A73C"
 			}
 		},
 		{
@@ -660,10 +679,18 @@
 				"fontStyle": "bold"
 			}
 		},
+    {
+      "name": "Markdown list",
+      "scope": ["markup.list.numbered.markdown", "markup.list.unnumbered.markdown"],
+      "settings": {
+        "foreground": "#b48a49",
+        "fontStyle": "bold"
+      }
+    },
 		{
 			"scope": "markup.inline.raw.string.markdown",
 			"settings": {
-				"foreground": "#b48a49",
+				"foreground": "#B5A73C",
 				"fontStyle": "bold"
 			}
 		},
