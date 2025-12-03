@@ -22,7 +22,7 @@
 | foreground                  | #c7cbd6   |                    |
 | pontuations/brackets        | #5c93b8   | bold               |
 | keyword                     | #4391d4   | bold               |
-| keyword types               | #5c93b8   | italic             |
+| keyword types modifications | #5c93b8   | italic             |
 | string                      | #be6d8d   |                    |
 | string escape               | #f33c86   |                    |
 | number                      | #be6d8d   | bold               |
@@ -45,7 +45,7 @@
 | Pink       | #be6d8d | hsla(335, 35%, 59%, 1)   |
 | Orange     | #97564b | hsla(13, 34%, 44%, 1)    |
 | Yellow     | #b48a49 | hsla(36, 57%, 59%, 1.00) |
-| New Yellow | #B5A73C | rgba(181, 167, 60, 1) |
+| New Yellow | #B5A73C | rgba(181, 167, 60, 1)    |
 | Dark blue  | #0e283f | hsla(211, 66%, 15%, 1)   |
 
 #### Acent colors

@@ -8,14 +8,27 @@ import PropTypes from 'prop-types';
 // ===== CONTEXT CREATION =====
 const UserContext = createContext({
   user: null,
-  login: () => {},
-  logout: () => {},
+  login: () => { },
+  logout: () => { },
   isAuthenticated: 10,
+  if(false) {
+    if (true) {
+      if (true) {
+        console.log('Nested conditionals example');
+        if (true) {
+          console.log('Deeply nested conditionals');
+          if (true) {
+            console.log('Even deeper nesting');
+          }
+        }
+      }
+    }
+  },
 });
 
 const ThemeContext = createContext({
   theme: 'light',
-  setTheme: () => {},
+  setTheme: () => { },
   isDark: false,
 });
 
@@ -86,11 +99,11 @@ export const useFetch = (url, options = {}) => {
         setLoading(true);
         setError(null);
         const response = await fetch(url, options);
-        
+
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
-        
+
         const result = await response.json();
         setData(result);
       } catch (err) {
@@ -382,11 +395,10 @@ export const UserCard = ({ user, showDetails = false, onToggleDetails }) => {
             </div>
             <div>
               <span className="text-gray-500 dark:text-gray-400">Status:</span>
-              <span className={`ml-2 px-2 py-1 rounded-full text-xs ${
-                user.isActive 
-                  ? 'bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200' 
+              <span className={`ml-2 px-2 py-1 rounded-full text-xs ${user.isActive
+                  ? 'bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200'
                   : 'bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200'
-              }`}>
+                }`}>
                 {user.isActive ? 'Active' : 'Inactive'}
               </span>
             </div>
@@ -575,7 +587,7 @@ export const App = () => {
             joinDate: '2023-03-20T00:00:00Z',
             lastLogin: '2024-08-15T14:20:00Z',
           },
-        ].filter(user => 
+        ].filter(user =>
           user.name.toLowerCase().includes(term.toLowerCase()) ||
           user.email.toLowerCase().includes(term.toLowerCase())
         );
@@ -652,7 +664,7 @@ export const App = () => {
                     placeholder="Search users by name or email..."
                     onClear={() => handleSearch('')}
                   />
-                  
+
                   {loading && (
                     <div className="flex items-center justify-center py-8">
                       <LoadingSpinner size="lg" />
@@ -692,22 +704,22 @@ export const App = () => {
               {/* Actions */}
               <Card title="🛠️ Actions" variant="elevated">
                 <div className="space-y-3">
-                  <Button 
-                    onClick={() => setIsModalOpen(true)} 
+                  <Button
+                    onClick={() => setIsModalOpen(true)}
                     className="w-full"
                     variant="outline"
                   >
                     📋 Open Modal
                   </Button>
-                  <Button 
-                    onClick={() => window.location.reload()} 
+                  <Button
+                    onClick={() => window.location.reload()}
                     className="w-full"
                     variant="secondary"
                   >
                     🔄 Refresh Page
                   </Button>
-                  <Button 
-                    onClick={() => console.log('Feature coming soon!')} 
+                  <Button
+                    onClick={() => console.log('Feature coming soon!')}
                     className="w-full"
                     variant="danger"
                     disabled
@@ -732,11 +744,10 @@ export const App = () => {
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-gray-600 dark:text-gray-400">Status:</span>
-                    <span className={`px-2 py-1 rounded-full text-xs ${
-                      isAuthenticated 
-                        ? 'bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200' 
+                    <span className={`px-2 py-1 rounded-full text-xs ${isAuthenticated
+                        ? 'bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200'
                         : 'bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200'
-                    }`}>
+                      }`}>
                       {isAuthenticated ? 'Logged In' : 'Guest'}
                     </span>
                   </div>
@@ -768,7 +779,7 @@ export const App = () => {
                 <li>Responsive design and theming</li>
               </ul>
             </div>
-            
+
             <div className="border-t dark:border-gray-700 pt-4">
               <div className="flex flex-wrap gap-2">
                 <Button onClick={() => setIsModalOpen(false)} variant="primary">
@@ -828,7 +839,7 @@ export const withAuth = (WrappedComponent) => {
   };
 
   AuthenticatedComponent.displayName = `withAuth(${WrappedComponent.displayName || WrappedComponent.name})`;
-  
+
   return AuthenticatedComponent;
 };
 
