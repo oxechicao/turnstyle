@@ -1,71 +1,34 @@
-> The theme is still evolving...
+<p align="center">
+    <img src="https://raw.githubusercontent.com/oxechicao/turnstyle/refs/heads/main/turnstyle.png" width="89" />
+    <h2 align="center">Turnstyle Theme</h2>
+</p>
 
-# turnstyle README
+# Turnstyle README
 
+This theme was based on [Rosepine](https://rosepinetheme.com/) for vscode.
+Thank you for the amazing theme, I've used it quite a bit.
+
+The colors came from Turnstile Never Enough tour. I love it <3
 ![never-enough](https://raw.githubusercontent.com/oxechicao/turnstyle/refs/heads/main/turnstile-never-enough.jpg)
-
-## Main Languages supported
-
-* .tsx, ts, js, jsx
-* go
-* md
-* java
-* mermaid
 
 ## Colors
 
 ### Color usage
 
-| Usages                      | Hex color | Modifications      |
-| --------------------------- | --------- | ------------------ |
-| background                  | #0e283f   |                    |
-| foreground                  | #c7cbd6   |                    |
-| pontuations/brackets        | #5c93b8   | bold               |
-| keyword                     | #4391d4   | bold               |
-| keyword types modifications | #5c93b8   | italic             |
-| string                      | #be6d8d   |                    |
-| string escape               | #f33c86   |                    |
-| number                      | #be6d8d   | bold               |
-| comments                    | #8a5737   | italic             |
-| function name               | #b48a49   |                    |
-| urls                        | #b48a49   | italic underscored |
-| urls deprecated/inactivated | #b48a49   | italic strikeout   |
-| selection background        | #0b4bbd   |                    |
-| selection foreground        | #a7e5f0   |                    |
-
-### Color lists
-
-#### Coding colors
-
-| Colors     | Hex     | HSLA                     |
-| ---------- | ------- | ------------------------ |
-| Dark Green | #123734 | hsla(171, 51%, 15%, 1)   |
-| Light blue | #4391d4 | hsla(210, 58%, 56%, 1)   |
-| Light      | #c7cbd6 | hsla(225, 13%, 81%, 1)   |
-| Pink       | #be6d8d | hsla(335, 35%, 59%, 1)   |
-| Orange     | #97564b | hsla(13, 34%, 44%, 1)    |
-| Yellow     | #b48a49 | hsla(36, 57%, 59%, 1.00) |
-| New Yellow | #B5A73C | rgba(181, 167, 60, 1)    |
-| Dark blue  | #0e283f | hsla(211, 66%, 15%, 1)   |
-
-#### Acent colors
-
-| Colors     | Hex     | HSLA                   |
-| ---------- | ------- | ---------------------- |
-| Dark Green | #093619 | hsla(138, 62%, 13%, 1) |
-| Light blue | #a7e5f0 | hsla(193, 69%, 80%, 1) |
-| Light      | #e7f3f3 | hsla(180, 25%, 94%, 1) |
-| Pink       | #f33c86 | hsla(332, 89%, 60%, 1) |
-| Orange     | #ec810d | hsla(32, 87%, 49%, 1)  |
-| Yellow     | #e8d107 | hsla(54, 92%, 47%, 1)  |
-| Dark blue  | #0b4bbd | hsla(221, 85%, 39%, 1) |
-
-| Colors     | Hex     | HSLA                    |
-| ---------- | ------- | ----------------------- |
-| Dark Green | #00513f | hsla(167, 100%, 16%, 1) |
-| Light blue | #5c93b8 | hsla(206, 35%, 54%, 1)  |
-| Light      | #d2d3ce | hsla(75, 7%, 82%, 1)    |
-| Pink       | #ad364a | hsla(349, 51%, 45%, 1)  |
-| Orange     | #8a5737 | hsla(23, 42%, 38%, 1)   |
-| Yellow     | #bf9346 | hsla(37, 46%, 52%, 1)   |
-| Dark blue  | #232e4b | hsla(223, 34%, 22%, 1)  |
+| Role           | Hex     | Darker  |
+| -------------- | ------- | ------- |
+| base           | #1d263a | #0f1524 |
+| surface        | #223244 | #172436 |
+| overlay        | #2c4259 | #182b3e |
+| muted          | #687a87 |
+| Subtle         | #a3cbd2 |
+| Text           | #e0f0f0 |
+| Pink           | #da81aa |
+| Yellow         | #dfdf90 |
+| Orange         | #d7a275 |
+| Green          | #4fa190 |
+| Light Blue     | #a3cbd2 |
+| Blue           | #75a6eb |
+| Highlight low  | #222b44 | #192034 |
+| Hightlight Med | #3c465d | #222c44 |
+| Highlight High | #545b6d | #363f53 |
